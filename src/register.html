@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="span-container">
+          <div class="logo-wrapper">
+            <img src="../assets/logo.png" alt="logo" class="logo" />
+            <p>JobFinders</p>
+          </div>
+          <div>
+            <h1 class="title-span">Find your dream job easily</h1>
+            <p class="desc-span">
+              Kami memiliki tim rekruter profesional yang akan membantu Anda
+              untuk menemukan pekerjaan yang sesuai dengan kualifikasi dan minat
+              Anda.
+            </p>
+          </div>
+        </section>
+        <section class="form-container">
+          <!-- header form -->
+          <div class="header-form">
+            <h2 class="title">Register to <span>JobFinders</span></h2>
+            <p class="desc">
+              Welcome to jobfinders please enter your register details below to
+              using app
+            </p>
+          </div>
+
+          <!-- Form login -->
+          <form id="loginform" onsubmit="register(event)" autocomplete="off">
+            <div class="wrapper1">
+              <label for="email">Username</label>
+              <br />
+              <input class="input-type" type="name" id="email" minlength="2" maxlength="100" required/>
+            </div>
+            <div class="wrapper2">
+              <label for="password">Password</label>
+              <br />
+              <input class="input-type" type="password" id="password" minlength="8" maxlength="100" required/>
+            </div>
+            <!-- <a class="forget-pass" href="#">Lupa password?</a> -->
+            <button class="btn-login" >Register</button>  
+          </form>
+
+          <!-- <p class="or">OR</p>
+          <div class="another-login">
+            <button class="anth-login">
+              <img
+                class="icon"
+                src="/assets/google.svg"
+                alt="icon-google"
+                draggable="false"
+              />
+              Google
+            </button>
+            <button class="anth-login">
+              <img
+                class="icon"
+                src="/assets/facebook.svg"
+                alt="icon-facebook"
+                draggable="false"
+              />
+              Facebook
+            </button>
+          </div> -->
+          <div class="register">
+            <p>
+              Sudah punya akun?
+              <a href="./form.html" class="regist-acc"> Login sekarang</a>
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

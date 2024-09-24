@@ -1,0 +1,200 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  height: 100vh;
+}
+.span-container {
+  /* background-color: rgb(255, 210, 210); */
+  grid-column-start: 1;
+  grid-column-end: 9;
+  background-image: url("../assets/fluid.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 8px;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-container {
+  grid-column-start: 9;
+  grid-column-end: 13;
+  /* background-color: rgb(72, 142, 63); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.desc {
+  width: 310px;
+  color: rgb(154, 154, 154);
+  font-size: 14px;
+  word-break: break-all;
+  font-weight: 300;
+}
+.header-form {
+  text-align: center;
+}
+.title > span {
+  color: rgb(142, 142, 218);
+}
+
+.input-type {
+  padding: 4px;
+  /* font-size: large; */
+  height: 24px;
+  border-radius: 4px;
+  width: 360px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+}
+.input-type:focus {
+  outline: 1.5px solid rgb(142, 142, 218);
+}
+
+.wrapper2 {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.wrapper1 {
+  font-size: 14px;
+}
+.forget-pass {
+  font-size: 12px;
+  color: rgb(120, 120, 237);
+}
+.btn-login {
+  padding: 8px 16px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: rgb(120, 120, 237);
+  border: 0px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.btn-login:hover {
+  background-color: rgb(103, 103, 233);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.anth-login {
+  padding: 8px 16px;
+  width: 360px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: rgb(243, 243, 243);
+  border: 0px;
+  color: gray;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.anth-login:hover {
+  background-color: rgb(232, 232, 232);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.or {
+  font-size: x-small;
+  color: gray;
+}
+.forget-pass {
+  text-decoration: none;
+  float: right;
+  margin-top: 2px;
+}
+.another-login {
+  margin-top: -20px;
+}
+.logo {
+  width: 32px;
+  object-fit: contain;
+}
+.logo-wrapper {
+  display: flex;
+  gap: 4px;
+  font-weight: 600;
+  place-content: left;
+  color: white;
+}
+.register {
+  font-size: 12px;
+  display: flex;
+  color: gray;
+}
+.regist-acc {
+  text-decoration: none;
+}
+.title-span {
+  font-size: 40px;
+  color: white;
+}
+.desc-span {
+  margin-top: -24px;
+  color: white;
+  max-width: 600px;
+}
+.greating {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.icon {
+  width: 16px;
+  height: 16px;
+}
+.avatar {
+  width: 120px;
+  height: 120px;
+}
+.logout {
+  padding: 8px 16px;
+  /* width: 100%; */
+  border-radius: 4px;
+  background-color: rgb(231, 62, 62);
+  border: 0px;
+  color: white;
+  cursor: pointer;
+}
+.logout:hover {
+  background-color: rgb(210, 55, 55);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+#my-popover {
+  background-color: blue;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .form-container {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    justify-self: center;
+  }
+  .span-container {
+    display: none;
+  }
+}
